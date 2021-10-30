@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.js"></script>
+		<title>HW4 Functions</title>
+	</head>
+	<body>
+		<fieldset>
+			<legend>CryptoJS Encryptor</legend>
+			<label for="input">Input:</label>
+			<input type="text" id="input" name="input" placeholder="Enter text for encryption"><br>
+			<label for="pass">Passkey:</label>
+			<input type="text" id="pass" name="pass" placeholder="Enter passkey"><br><br>
+			<input type="button" value="Encrypt" onclick="encryptText()"><br><br>
+			<label for="aesOut">AES:</label>
+			<input type="text" id="aesOut" name="aesOut" placeholder="AES encrypted hash" disabled><br>
+			<label for="sha1Out">SHA-1:</label>
+			<input type="text" id="sha1Out" name="sha1Out" placeholder="SHA-1 encrypted hash" disabled><br>
+			<label for="sha224Out">SHA-224:</label>
+			<input type="text" id="sha224Out" name="sha224Out" placeholder="SHA-224 encrypted hash" disabled><br>
+			<label for="sha256Out">SHA-256:</label>
+			<input type="text" id="sha256Out" name="sha256Out" placeholder="SHA-256 encrypted hash" disabled><br>
+		</fieldset>
+		<hr>
+		<fieldset>
+			<legend>Decimal/Binary Converter</legend>
+			<label for="val">Value:</label>
+			<input type="text" id="val" name="val" placeholder="Enter a number value"><br><br>
+			<input type="button" value="Convert to Binary" onclick="convertDec2Bin()">
+			<input type="button" value="Convert to Decimal" onclick="convertBin2Dec()"><br><br>
+			<label for="out">Output:</label>
+			<input type="text" id="out" name="out" placeholder="Converted value" disabled>
+		</fieldset>
+		<script src="script.js"></script>
+	</body>
+</html>
